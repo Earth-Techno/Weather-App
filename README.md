@@ -1,4 +1,4 @@
-#Weather App
+# Weather App
 
 I built this weather app because I wanted something simple that shows everything, not just the temperature. Humidity, wind, UV, air quality, the whole picture. No frameworks, no build tools, just plain HTML, CSS, and JavaScript.
 
