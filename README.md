@@ -28,4 +28,8 @@ The API key is visible in the code. Fine for a hobby project, but you'd want to 
 
 Weather data comes from WeatherAPI. They have a generous free tier and the API is easy to work with.
 
-If this helped you, a star on the repo is always appreciated. 
+If this helped you, a star on the repo is always appreciated.
+
+# Created By
+
+Prithvi Raj Katuwal
