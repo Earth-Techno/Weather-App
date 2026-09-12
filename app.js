@@ -3,7 +3,7 @@
 // ============================================
 
 const API_KEY = "461a4b45016246bb926104607261209";
-const BASE_URL = "http://api.weatherapi.com/v1/current.json";
+const BASE_URL = "https://api.weatherapi.com/v1/current.json";
 
 const $ = (id) => document.getElementById(id);
 
