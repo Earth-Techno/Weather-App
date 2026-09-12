@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>🌤️ Weather App</h1>
+
+    <form id="searchForm" class="search">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city name (e.g. London)"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="loader" class="loader hidden">Loading…</div>
+    <div id="error" class="error hidden"></div>
+
+    <main id="result" class="result hidden">
+      <!-- Location -->
+      <section class="card location-card">
+        <h2 id="locationName">—</h2>
+        <p id="localTime">—</p>
+      </section>
+
+      <!-- Current weather -->
+      <section class="card main-card">
+        <div class="main-left">
+          <img id="weatherIcon" src="" alt="icon" />
+          <p id="conditionText">—</p>
+        </div>
+        <div class="main-right">
+          <span id="tempC">—</span><span class="unit">°C</span>
+          <p id="tempF" class="muted">—</p>
+        </div>
+      </section>
+
+      <!-- Details grid -->
+      <section class="card grid">
+        <div class="item"><span class="label">Feels Like</span><span id="feelsLike" class="value">—</span></div>
+        <div class="item"><span class="label">Humidity</span><span id="humidity" class="value">—</span></div>
+        <div class="item"><span class="label">Wind</span><span id="wind" class="value">—</span></div>
+        <div class="item"><span class="label">Wind Direction</span><span id="windDir" class="value">—</span></div>
+        <div class="item"><span class="label">Gust</span><span id="gust" class="value">—</span></div>
+        <div class="item"><span class="label">Pressure</span><span id="pressure" class="value">—</span></div>
+        <div class="item"><span class="label">Precipitation</span><span id="precip" class="value">—</span></div>
+        <div class="item"><span class="label">Cloud Cover</span><span id="cloud" class="value">—</span></div>
+        <div class="item"><span class="label">Visibility</span><span id="visibility" class="value">—</span></div>
+        <div class="item"><span class="label">UV Index</span><span id="uv" class="value">—</span></div>
+        <div class="item"><span class="label">Is Day?</span><span id="isDay" class="value">—</span></div>
+        <div class="item"><span class="label">Dew Point</span><span id="dewPoint" class="value">—</span></div>
+        <div class="item"><span class="label">Heat Index</span><span id="heatIndex" class="value">—</span></div>
+        <div class="item"><span class="label">Wind Chill</span><span id="windChill" class="value">—</span></div>
+        <div class="item"><span class="label">Latitude</span><span id="lat" class="value">—</span></div>
+        <div class="item"><span class="label">Longitude</span><span id="lon" class="value">—</span></div>
+      </section>
+
+      <!-- Air Quality -->
+      <section class="card aqi-card">
+        <h3>Air Quality Index</h3>
+        <div class="grid">
+          <div class="item"><span class="label">CO</span><span id="co" class="value">—</span></div>
+          <div class="item"><span class="label">NO₂</span><span id="no2" class="value">—</span></div>
+          <div class="item"><span class="label">O₃</span><span id="o3" class="value">—</span></div>
+          <div class="item"><span class="label">SO₂</span><span id="so2" class="value">—</span></div>
+          <div class="item"><span class="label">PM2.5</span><span id="pm25" class="value">—</span></div>
+          <div class="item"><span class="label">PM10</span><span id="pm10" class="value">—</span></div>
+          <div class="item"><span class="label">US EPA Index</span><span id="usEpa" class="value">—</span></div>
+          <div class="item"><span class="label">GB Defra Index</span><span id="gbDefra" class="value">—</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"> Created by Prithvi Raj Katuwal </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
